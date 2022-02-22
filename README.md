@@ -8,13 +8,6 @@ Dataset ingested is as follows:
 * Phase between 0° and 90°
 * AWGN between 15dB and 30dB
 
-```
-V 3   .   #   .   #
-  |       |       |-> Sub-model version
-  |       |---------> Parameter being tested (1: Frequency, 2: Amplitude, 3: Phase)
-  |-----------------> Major Model Version (Only version 3 follows this, verions beyond are a <Major>.<Minor>)
-```
+Model started by creating individual models for each parameter before combining into one complete prediction model
 
-Version 4 was an attempt at Transfer Learning from a previously built model
-    
-Version 5 puts together all single models into one predictive model
+Some Transfer Learning from previouly built models was also attempted
